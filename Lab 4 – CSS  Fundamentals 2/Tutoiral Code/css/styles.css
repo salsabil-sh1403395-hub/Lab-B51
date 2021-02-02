@@ -1,39 +1,46 @@
-/*Container*/
-.wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2px;
-    border-style: solid;
+.wrapper {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+    /*flex : 1 , 400px;*/
+    /*grid-template-columns: repeat(auto-fill, 200px);*/
+    /*grid-auto-rows: 1fr;*/
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px auto 70px 70px;
+    gap: 10px;
+    height: 800px;
+    background: yellow;
+    grid-template-areas:
+    "header header header"
+    "footer   footer   main"
+    "footer footer main"
+    "nav nav nav"
+    ;
 }
-/*Flex items*/
+
 .section{
-    border-style: dotted;
-    background-color: red;
-    height: 200px;
+    background: red;
 }
-.menu{
-    background-color: yellow;
-    border: solid 2px darkblue;
-    flex: 1;
-    height: 400px;
+.nav{background-color: blue; grid-area: nav;}
+.header{grid-area: header;}
+.main{grid-area: main;}
+.footer{grid-area: footer;}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*.section1 {*/
+/*    background-color: darkgrey;*/
+/*    grid-row-start: 1;*/
+/*    grid-row-end: 4;*/
+/*}*/
 
-.section1{
-    background-color: lightblue;
-    order: 4
-}
-.section2{
-    background-color: darkgrey;
-    order: 27
-}
-.section3{
-    order: 3
-}
+/*.section2 {*/
+/*    background-color: red;*/
+/*    grid-row: 1/3;*/
+/*    grid-column: 2/4;*/
+/*}*/
 
-
-
-
+/*.section3 {*/
+/*    background-color: yellow;*/
+/*    grid-row: 3;*/
+/*    grid-column-start: 2;*/
+/*    grid-column-end: 4;*/
+/*}*/

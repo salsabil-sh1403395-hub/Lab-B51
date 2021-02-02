@@ -1,0 +1,40 @@
+/*Container*/
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-style: solid;
+    /*flex-direction: column;*/
+}
+/*Flex items*/
+.section{
+    border-style: dotted;
+    background-color: red;
+    height: 200px;
+}
+.menu{
+    background-color: yellow;
+    border: solid 2px darkblue;
+    flex: 1;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.menu section{
+    flex: 1;
+}
+.section1{
+    background-color: lightblue;
+}
+.section2{
+    background-color: darkgrey;
+}
+.section3{
+}
+
+
+
+
