@@ -1,4 +1,39 @@
-section{
-    background-color: grey;
-    margin: 10px;
+/*Container*/
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    border-style: solid;
 }
+/*Flex items*/
+.section{
+    border-style: dotted;
+    background-color: red;
+    height: 200px;
+}
+.menu{
+    background-color: yellow;
+    border: solid 2px darkblue;
+    flex: 1;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1{
+    background-color: lightblue;
+    order: 4
+}
+.section2{
+    background-color: darkgrey;
+    order: 27
+}
+.section3{
+    order: 3
+}
+
+
+
+
