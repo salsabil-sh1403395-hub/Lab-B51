@@ -216,3 +216,10 @@ numbers.splice(1, 0, 89)
 
 console.log('wrong way to sort number ' , numbers.sort())
 console.log('proper way' , numbers.sort((x, y) => y - x))
+
+//array destructuring [extracting elements from the array]
+
+let [first , second , ...rest] = numbers
+console.log(first )
+console.log(second )
+console.log(rest)
