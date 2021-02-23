@@ -16,15 +16,14 @@
                id="search-bar"
                placeholder="Write the country name here"/>
         <input type="submit"
-                
-               value="Search" name="submit"/>
+               id="search-button"
+               value="Search" name="submit">
     </form>
     <div class="select">
         <select
+                onchange = 'loadWebsite(this.value)'
                 name="universities"
-                id="universities"
-                
-        >
+                id="universities">
             <option selected value="" disabled>Select University website to load</option>
         </select>
     </div>
@@ -36,5 +35,7 @@
             id="website"
             type="text/html">
 </div>
+
+<script src="js/index.js"></script>
 </body>
 </html>

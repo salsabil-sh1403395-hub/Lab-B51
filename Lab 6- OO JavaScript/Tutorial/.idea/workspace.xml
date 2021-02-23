@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc104180-11c8-4c5d-bf0c-2a694ea1b5df" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Bus.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/Bus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/CarShow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Truck.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/Truck.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Vehicle.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/Vehicle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/bus.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignments/Assignment 2/~$signment 2.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614084148595</updated>
-      <workItem from="1614084149999" duration="3877000" />
+      <workItem from="1614084149999" duration="4168000" />
     </task>
     <servers />
   </component>
