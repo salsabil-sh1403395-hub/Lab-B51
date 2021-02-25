@@ -23,6 +23,4 @@ function loadUniversities(universities) {
     universitiesDD.innerHTML = uniOptions.join('')
 }
 
-function loadWebsite(url){
-    website.src = url;
-}
+function loadWebsite(url){website.src = url;}
