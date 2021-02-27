@@ -4,11 +4,11 @@ let todos = []
 const todoInputBox = document.querySelector('#todo-input')
 const todolistContainer = document.querySelector('#todolist-container')
 
-function completed(ele) {
+function completed(id, ele) {
     if (ele.checked)
-        document.querySelector('#todo1 p').classList.add('strike')
+        document.querySelector(`${id}`).classList.add('strike')
     else
-        document.querySelector('#todo1 p').classList.remove('strike')
+        document.querySelector(`${id}`).classList.remove('strike')
 }
 
 //delete element
@@ -58,12 +58,13 @@ function clearAll() {
 }
 
 //let us load the content
-function loadTodoList(){
+function loadTodoList() {
     let todoData = localStorage.getItem('todos')
     console.log(todoData)
-   if(todoData != null){
-       todos = JSON.parse(todoData)
-       showTodos();
-   }
+    if (todoData != null) {
+        todos = JSON.parse(todoData)
+        showTodos();
+    }
 }
+
 loadTodoList()
