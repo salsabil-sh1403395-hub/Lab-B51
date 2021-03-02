@@ -1,58 +1,33 @@
-const Truck = require("./model/Truck");
+// two ways to create object
+/*const vehicle = {
+    model : 'Toyota',
+    engine : 6,
+    toString(){
+        return `
+                Vehicle Info
+            Mode  : ${this.model}
+            Engine: ${this.engine}
+        `
+    }
+}
+
+vehicle.color = 'Black'  //error property does not exot
+console.log(vehicle.color)
+*/
+
 const Bus = require("./model/Bus");
-//import
+const Truck = require("./model/Truck");
+const ShowRoom = require("./model/ShowRoom");
 
-const truck = new Truck('Volvo YZ', 12, 2000)
-const bus = new Bus('Toyota HZ', 8, 45);
+let bus = new Bus('TATA' , 12 , 90);
+let truck = new Truck('VOLVO' , 12 , 1500)
 
-console.log(truck)
-console.log(bus)
+let vehicles = [bus, truck]
 
-console.log(`
-  Truck Info
-    Model is ${truck.model}
-    Engine is ${truck.engine}
-    Load is ${truck.load},
-    Insurance is ${truck.getInsurance()}
-`)
+let showRoom = new ShowRoom(vehicles);
+console.log(showRoom.vehicles)
 
+let truck2 = new Truck('VOLVO' , 12 , 1500)
 
-let colors = ["white", "blue", "yellow", "black", "red", "green"]
-let [a, b, ...c] = colors
-
-let objects = {one: 1, two: 2, three: 3, add: (x, y) => x + y}
-
-let {one, two} = objects
-
-console.log(one, two)
-
-let points = {
-
-    y: 2111,
-    z: 5,
-    a: 4,
-    t: 4,
-    x: 1111,
-}
-
-function draw({x, y}) {
-    console.log(x, y)
-}
-
-draw(points)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+showRoom.addVehicles(truck2)
+console.log(showRoom.vehicles)

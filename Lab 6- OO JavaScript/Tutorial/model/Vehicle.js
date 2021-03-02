@@ -1,13 +1,18 @@
-class Vehicle{
-    //properties /attributes
-    constructor(model, engine){
-        this.model = model
-        this.engine = engine
+class Vehicle {
+    //constructor
+    constructor(model, engine) {
+        this.model = model;
+        this.engine = engine;
     }
-    getInsurance() {
-        if (this.engine > 6) return 1500
-        else if (this.engine > 4) return 1000
-        else return 400
+
+    //methods
+    toString() {
+        return `
+                Vehicle Info
+            Mode  : ${this.model}
+            Engine: ${this.engine}
+        `
     }
 }
-module.exports = Vehicle
+
+module.exports = Vehicle;
