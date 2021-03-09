@@ -5,7 +5,11 @@ const countryInputBox = document.querySelector('#country')
 const populationInputBox = document.querySelector('#population')
 const formElement = document.querySelector('#form')
 const countriesTable = document.querySelector('#countries')
+const noOfRows = document.querySelector('#no-rows')
+
 const db = new Localbase('b52.census.db')
+let isEdit = false
+let censusToBeEdited;
 
 showCensusData()
 
@@ -14,9 +18,14 @@ formElement.addEventListener('submit', addCensus)
 
 async function showCensusData() {
     //get all the collection from the databas
-    const censusData = await db.collection('census').get()
+    const totalNo = parseInt(noOfRows.value)
+
+    const censusData = await db
+        .collection('census')
+        .limit(totalNo)
+        .orderBy("country", "asc")
+        .get()
     const censusRows = censusData.map(c => censusToHTMLRow(c))
-    console.log(censusRows.join(''))
     countriesTable.innerHTML = `
         <thead>
             <tr>
@@ -28,31 +37,49 @@ async function showCensusData() {
         <tbody>${censusRows.join('')}</tbody>
     `
 }
+
+async function addCensus(event) {
+    event.preventDefault()
+    const newCensus = form2Object(formElement)
+    if (isEdit)
+        await db.collection('census')
+            .doc({id: censusToBeEdited.id})
+            .update(newCensus)
+    else {
+        newCensus.id = Date.now().toString()
+        await db.collection('census').add(newCensus)
+    }
+
+    formElement.reset()
+    await showCensusData()
+    isEdit = false
+}
+
 async function deleteCensus(cid) {
     await db.collection('census').doc({id: cid}).delete()
     await showCensusData()
 }
+
+async function editCensus(cid) {
+    isEdit = true
+    censusToBeEdited = await db.collection('census').doc({id: cid}).get()
+    countryInputBox.value = censusToBeEdited.country
+    populationInputBox.value = censusToBeEdited.population
+}
+
 function censusToHTMLRow(c) {
     return `
         <tr>
             <td>${c.country}</td>
             <td>${c.population}</td> 
             <td>
-                <i class="fa fa-pencil">Edit</i>
+                <i class="fa fa-pencil" onclick="editCensus('${c.id}')">Edit</i>
                 <i class="fa fa-trash" onclick="deleteCensus('${c.id}')">Delete</i>
             </td>
         </tr>
     `
 }
-async function addCensus(event) {
-    event.preventDefault()
-    const newCensus = form2Object(formElement)
-    newCensus.id = Date.now().toString()
 
-    const message = await db.collection('census').add(newCensus)
-    formElement.reset()
-    await showCensusData()
-}
 function form2Object(formElement) {
     const formData = new FormData(formElement)
     const data = {}
