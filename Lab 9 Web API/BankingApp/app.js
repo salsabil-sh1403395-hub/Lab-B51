@@ -1,36 +1,25 @@
 import express from 'express'
 import morgan from 'morgan'
-//require
+import fs from 'fs-extra'
+
+import {fileURLToPath} from 'url'
+const url = new URL('./data/accounts.json' , import.meta.url)
+const filePath = fileURLToPath(url)
+
 const app = express()
 const port = 3000
-
-//Buying car [base model]
-
-//return static and dynamic
-//add this middleware that tells the server where the static data is located
-
 
 app.use(express.static('public'))
 
 app.use(morgan('dev'))
-//dynamic [web APIs]
 
-// CRUD
-//Reading
-app.get('/api/accounts' , (req, res)=>{
-    res.send('This is the get method for /api/accounts')
-})
-//adding , creating
-app.post('/api/accounts' , (req, res)=>{
-    res.send('This is the post method for /api/accounts')
-})
-//updating
-app.put('/api/accounts' , (req, res)=>{
-    res.send('This is the put method for /api/accounts')
-})
-//deleting or removing
-app.delete('/api/accounts' , (req, res)=>{
-    res.send('This is the delete method for /api/accounts')
+app.get('/api/accounts' , async (req, res)=>{
+    let accounts = await fs.readJson(filePath)
+    const type = req.query.type
+    if(type){
+        accounts = accounts.filter(acc=>acc.acctType == type)
+    }
+    res.json(accounts)
 })
 
 app.listen(port, (req,res) => {
