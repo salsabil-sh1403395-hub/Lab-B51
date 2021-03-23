@@ -13,6 +13,8 @@ app.use(express.static('public'))
 
 app.use(morgan('dev'))
 
+app.use(express.json())
+
 app.get('/api/accounts' , async (req, res)=>{
     let accounts = await fs.readJson(filePath)
     const type = req.query.type
@@ -39,6 +41,29 @@ app.delete('/api/accounts/:acctNo', async (req, res)=>{
     res.send(`Successfully deleted the account with acc-no ${accountNo}`)
 })
 
+app.post('/api/accounts', async (req, res)=>{
+    const account = req.body
+    let accounts = await fs.readJson(filePath)
+
+    accounts.push(account)
+    await fs.writeJson(filePath , accounts)
+
+    res.json(req.body)
+})
+
+app.put('/api/accounts', async (req, res)=>{
+    const account = req.body
+    let accounts = await fs.readJson(filePath)
+
+    const index =  accounts.findIndex(acc=>acc.accountNo == account.accountNo)
+    if(index>=0){
+        accounts[index] = accoun
+        await fs.writeJson(filePath , accounts)
+        res.json( accounts[index])
+    }else {
+        res.send('Account does not exit')
+    }
+})
 
 
 app.listen(port, (req,res) => {
