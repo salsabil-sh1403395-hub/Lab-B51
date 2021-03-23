@@ -1,37 +1,1192 @@
 [
   {
-    "accountNo": 2003,
-    "acctType": "Saving",
-    "balance": 9000,
-    "minimumBalance": 1000
+    "id": "4011",
+    "year": "2021",
+    "grade": 1,
+    "sectionCode": "1A",
+    "students": [
+      {
+        "id": "2001",
+        "firstName": "Franklyn",
+        "lastName": "Lashford",
+        "email": "flashford0@pinterest.com",
+        "parentID": "3001",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2002",
+        "firstName": "Demeter",
+        "lastName": "Checchetelli",
+        "email": "dchecchetelli1@tmall.com",
+        "parentID": "3002",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2003",
+        "firstName": "Erhard",
+        "lastName": "Ciccone",
+        "email": "eciccone2@nifty.com",
+        "parentID": "3003",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2004",
+        "firstName": "Rosanna",
+        "lastName": "Bourgourd",
+        "email": "rbourgourd3@free.fr",
+        "parentID": "3004",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2005",
+        "firstName": "Kenn",
+        "lastName": "O'Gavin",
+        "email": "kogavin4@illinois.edu",
+        "parentID": "3005",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2006",
+        "firstName": "Claudell",
+        "lastName": "Aitkin",
+        "email": "caitkin5@blogtalkradio.com",
+        "parentID": "3006",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2007",
+        "firstName": "Mozelle",
+        "lastName": "Linay",
+        "email": "mlinay6@soup.io",
+        "parentID": "3007",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2008",
+        "firstName": "Brynna",
+        "lastName": "Huffer",
+        "email": "bhuffer7@xing.com",
+        "parentID": "3008",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2009",
+        "firstName": "Hal",
+        "lastName": "Goodluck",
+        "email": "hgoodluck8@yolasite.com",
+        "parentID": "3009",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2010",
+        "firstName": "Charil",
+        "lastName": "Whybrow",
+        "email": "cwhybrow9@de.vu",
+        "parentID": "3010",
+        "gradeLevel": "1"
+      }
+    ],
+    "courses": [
+      {
+        "courseCode": "ARBC1",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          4,
+          3,
+          2,
+          1,
+          6
+        ]
+      },
+      {
+        "courseCode": "ENGL1",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          6,
+          5,
+          4,
+          3,
+          2
+        ]
+      },
+      {
+        "courseCode": "SCEN1",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          2,
+          1,
+          6,
+          5,
+          4
+        ]
+      },
+      {
+        "courseCode": "MATH1",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          1,
+          6,
+          5,
+          4,
+          3
+        ]
+      },
+      {
+        "courseCode": "ISLM1",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          3,
+          2,
+          1,
+          6,
+          5
+        ]
+      },
+      {
+        "courseCode": "COMP1",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      }
+    ]
   },
   {
-    "accountNo": 2004,
-    "acctType": "Saving",
-    "balance": 400000,
-    "minimumBalance": 1000
+    "id": "4022",
+    "year": "2021",
+    "grade": 1,
+    "sectionCode": "1B",
+    "students": [
+      {
+        "id": "2011",
+        "firstName": "Darbee",
+        "lastName": "Randalson",
+        "email": "drandalsona@ca.gov",
+        "parentID": "3011",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2012",
+        "firstName": "Shaylynn",
+        "lastName": "Figgins",
+        "email": "sfigginsb@elpais.com",
+        "parentID": "3012",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2013",
+        "firstName": "Brynne",
+        "lastName": "Giscken",
+        "email": "bgisckenc@1und1.de",
+        "parentID": "3013",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2014",
+        "firstName": "Cleo",
+        "lastName": "Giblett",
+        "email": "cgiblettd@mapquest.com",
+        "parentID": "3014",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2015",
+        "firstName": "Frances",
+        "lastName": "Brazer",
+        "email": "fbrazere@prlog.org",
+        "parentID": "3015",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2016",
+        "firstName": "Eadmund",
+        "lastName": "Wrigley",
+        "email": "ewrigleyf@dropbox.com",
+        "parentID": "3016",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2017",
+        "firstName": "Arlee",
+        "lastName": "Pilger",
+        "email": "apilgerg@netscape.com",
+        "parentID": "3017",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2018",
+        "firstName": "Raynor",
+        "lastName": "Coleborn",
+        "email": "rcolebornh@artisteer.com",
+        "parentID": "3018",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2019",
+        "firstName": "Rhona",
+        "lastName": "Ollet",
+        "email": "rolleti@sogou.com",
+        "parentID": "3019",
+        "gradeLevel": "1"
+      },
+      {
+        "id": "2020",
+        "firstName": "Marta",
+        "lastName": "Panchin",
+        "email": "mpanchinj@irs.gov",
+        "parentID": "3020",
+        "gradeLevel": "1"
+      }
+    ],
+    "courses": [
+      {
+        "courseCode": "ARBC1",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      {
+        "courseCode": "ENGL1",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          1,
+          6,
+          5,
+          4,
+          3
+        ]
+      },
+      {
+        "courseCode": "SCEN1",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          3,
+          2,
+          1,
+          6,
+          5
+        ]
+      },
+      {
+        "courseCode": "MATH1",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          2,
+          1,
+          6,
+          5,
+          4
+        ]
+      },
+      {
+        "courseCode": "ISLM1",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          4,
+          3,
+          2,
+          1,
+          6
+        ]
+      },
+      {
+        "courseCode": "COMP1",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          6,
+          5,
+          4,
+          3,
+          2
+        ]
+      }
+    ]
   },
   {
-    "accountNo": 4444,
-    "acctType": "Saving",
-    "balance": 250000,
-    "minimumBalance": 1000
+    "id": "4033",
+    "year": "2021",
+    "grade": 2,
+    "sectionCode": "2A",
+    "students": [
+      {
+        "id": "2021",
+        "firstName": "Val",
+        "lastName": "Rizzini",
+        "email": "vrizzinik@joomla.org",
+        "parentID": "3001",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2022",
+        "firstName": "Amye",
+        "lastName": "Frankiss",
+        "email": "afrankissl@cdbaby.com",
+        "parentID": "3002",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2023",
+        "firstName": "Conn",
+        "lastName": "Haire",
+        "email": "chairem@bing.com",
+        "parentID": "3004",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2024",
+        "firstName": "Anselma",
+        "lastName": "Ellams",
+        "email": "aellamsn@hp.com",
+        "parentID": "3008",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2025",
+        "firstName": "Bernelle",
+        "lastName": "Lebreton",
+        "email": "blebretono@github.io",
+        "parentID": "3009",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2026",
+        "firstName": "Karin",
+        "lastName": "Dawks",
+        "email": "kdawksp@vkontakte.ru",
+        "parentID": "3013",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2027",
+        "firstName": "Worth",
+        "lastName": "Roizn",
+        "email": "wroiznq@archive.org",
+        "parentID": "3014",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2027",
+        "firstName": "Blanca",
+        "lastName": "Derisley",
+        "email": "bderisleyr@weather.com",
+        "parentID": "3015",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2028",
+        "firstName": "Stephen",
+        "lastName": "Shapero",
+        "email": "sshaperos@surveymonkey.com",
+        "parentID": "3016",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2029",
+        "firstName": "Goddard",
+        "lastName": "Infante",
+        "email": "ginfantet@cmu.edu",
+        "parentID": "3017",
+        "gradeLevel": "2"
+      }
+    ],
+    "courses": [
+      {
+        "courseCode": "ARBC2",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          6,
+          5,
+          4,
+          3,
+          2
+        ]
+      },
+      {
+        "courseCode": "ENGL2",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          2,
+          1,
+          6,
+          5,
+          4
+        ]
+      },
+      {
+        "courseCode": "SCEN2",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          4,
+          3,
+          2,
+          1,
+          6
+        ]
+      },
+      {
+        "courseCode": "MATH2",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          3,
+          2,
+          1,
+          6,
+          5
+        ]
+      },
+      {
+        "courseCode": "ISLM2",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      {
+        "courseCode": "COMP2",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          1,
+          6,
+          5,
+          4,
+          3
+        ]
+      }
+    ]
   },
   {
-    "accountNo": 7000,
-    "acctType": "Saving",
-    "balance": 800000,
-    "minimumBalance": 1000
+    "id": "4044",
+    "year": "2021",
+    "grade": 2,
+    "sectionCode": "2B",
+    "students": [
+      {
+        "id": "2030",
+        "firstName": "Gael",
+        "lastName": "Brankley",
+        "email": "gbrankleyu@ycombinator.com",
+        "parentID": "3019",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2031",
+        "firstName": "Haley",
+        "lastName": "Dict",
+        "email": "hdictv@reddit.com",
+        "parentID": "3020",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2032",
+        "firstName": "Meir",
+        "lastName": "Leynham",
+        "email": "mleynhamw@ihg.com",
+        "parentID": "3021",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2033",
+        "firstName": "Nertie",
+        "lastName": "Gatecliff",
+        "email": "ngatecliffx@hc360.com",
+        "parentID": "3022",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2034",
+        "firstName": "Betsey",
+        "lastName": "Bartoszewicz",
+        "email": "bbartoszewiczy@friendfeed.com",
+        "parentID": "3023",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2035",
+        "firstName": "Nicol",
+        "lastName": "Saunders",
+        "email": "nsaundersz@lycos.com",
+        "parentID": "3024",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2036",
+        "firstName": "Jesselyn",
+        "lastName": "Cleaver",
+        "email": "jcleaver10@ed.gov",
+        "parentID": "3025",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2037",
+        "firstName": "Shane",
+        "lastName": "Harwood",
+        "email": "sharwood11@unblog.fr",
+        "parentID": "3026",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2038",
+        "firstName": "Sophronia",
+        "lastName": "Chatelot",
+        "email": "schatelot12@tinyurl.com",
+        "parentID": "3027",
+        "gradeLevel": "2"
+      },
+      {
+        "id": "2039",
+        "firstName": "Noby",
+        "lastName": "Benley",
+        "email": "nbenley13@addthis.com",
+        "parentID": "3028",
+        "gradeLevel": "2"
+      }
+    ],
+    "courses": [
+      {
+        "courseCode": "ARBC2",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          1,
+          6,
+          5,
+          4,
+          3
+        ]
+      },
+      {
+        "courseCode": "ENGL2",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          3,
+          2,
+          1,
+          6,
+          5
+        ]
+      },
+      {
+        "courseCode": "SCEN2",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      {
+        "courseCode": "MATH2",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          4,
+          3,
+          2,
+          1,
+          6
+        ]
+      },
+      {
+        "courseCode": "ISLM2",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          6,
+          5,
+          4,
+          3,
+          2
+        ]
+      },
+      {
+        "courseCode": "COMP2",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          2,
+          1,
+          6,
+          5,
+          4
+        ]
+      }
+    ]
   },
   {
-    "accountNo": 111,
-    "acctType": "Current",
-    "balance": 9000
+    "id": "4055",
+    "year": "2021",
+    "grade": 3,
+    "sectionCode": "3A",
+    "students": [
+      {
+        "id": "2040",
+        "firstName": "Lorrie",
+        "lastName": "Gatheridge",
+        "email": "lgatheridge14@engadget.com",
+        "parentID": "3001",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2041",
+        "firstName": "Allison",
+        "lastName": "Bodd",
+        "email": "abodd15@ebay.com",
+        "parentID": "3002",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2042",
+        "firstName": "Wandie",
+        "lastName": "Milroy",
+        "email": "wmilroy16@mlb.com",
+        "parentID": "3004",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2043",
+        "firstName": "Salvidor",
+        "lastName": "Dyson",
+        "email": "sdyson17@virginia.edu",
+        "parentID": "3013",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2044",
+        "firstName": "Gustavo",
+        "lastName": "Scrimgeour",
+        "email": "gscrimgeour18@odnoklassniki.ru",
+        "parentID": "3015",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2045",
+        "firstName": "Daron",
+        "lastName": "Reeds",
+        "email": "dreeds19@xrea.com",
+        "parentID": "3017",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2046",
+        "firstName": "Jasmina",
+        "lastName": "Persey",
+        "email": "jpersey1a@feedburner.com",
+        "parentID": "3020",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2047",
+        "firstName": "Gilli",
+        "lastName": "Loveguard",
+        "email": "gloveguard1b@typepad.com",
+        "parentID": "3022",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2048",
+        "firstName": "Lezley",
+        "lastName": "Duiguid",
+        "email": "lduiguid1c@etsy.com",
+        "parentID": "3023",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2049",
+        "firstName": "Saleem",
+        "lastName": "Shakespeare",
+        "email": "sshakespeare1d@tripadvisor.com",
+        "parentID": "3024",
+        "gradeLevel": "3"
+      }
+    ],
+    "courses": [
+      {
+        "courseCode": "ARBC3",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          2,
+          1,
+          6,
+          5,
+          4
+        ]
+      },
+      {
+        "courseCode": "ENGL3",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          4,
+          3,
+          2,
+          1,
+          6
+        ]
+      },
+      {
+        "courseCode": "SCEN3",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          6,
+          5,
+          4,
+          3,
+          2
+        ]
+      },
+      {
+        "courseCode": "MATH3",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      {
+        "courseCode": "ISLM3",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          1,
+          6,
+          5,
+          4,
+          3
+        ]
+      },
+      {
+        "courseCode": "COMP3",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          3,
+          2,
+          1,
+          6,
+          5
+        ]
+      }
+    ]
   },
   {
-    "accountNo": 2003,
-    "acctType": "Saving",
-    "balance": 8888,
-    "minimumBalance": 1000
+    "id": "4066",
+    "year": "2021",
+    "grade": 3,
+    "sectionCode": "3B",
+    "students": [
+      {
+        "id": "2050",
+        "firstName": "Shani",
+        "lastName": "Habens",
+        "email": "shabens1e@barnesandnoble.com",
+        "parentID": "3025",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2051",
+        "firstName": "Deloris",
+        "lastName": "Maddie",
+        "email": "dmaddie1f@smugmug.com",
+        "parentID": "3026",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2052",
+        "firstName": "Shelbi",
+        "lastName": "Jimmison",
+        "email": "sjimmison1g@dedecms.com",
+        "parentID": "3027",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2053",
+        "firstName": "Rolph",
+        "lastName": "Morsey",
+        "email": "rmorsey1h@geocities.com",
+        "parentID": "3027",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2054",
+        "firstName": "Horacio",
+        "lastName": "Dyka",
+        "email": "hdyka1i@flavors.me",
+        "parentID": "3028",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2055",
+        "firstName": "Roddie",
+        "lastName": "Housin",
+        "email": "rhousin1j@pcworld.com",
+        "parentID": "3028",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2056",
+        "firstName": "Isis",
+        "lastName": "Simnell",
+        "email": "isimnell1k@globo.com",
+        "parentID": "3029",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2057",
+        "firstName": "Kimberli",
+        "lastName": "Fieller",
+        "email": "kfieller1l@comcast.net",
+        "parentID": "3029",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2058",
+        "firstName": "Aurore",
+        "lastName": "Matusson",
+        "email": "amatusson1m@nih.gov",
+        "parentID": "3030",
+        "gradeLevel": "3"
+      },
+      {
+        "id": "2059",
+        "firstName": "Rollin",
+        "lastName": "Derr",
+        "email": "rderr1n@usda.gov",
+        "parentID": "3030",
+        "gradeLevel": "3"
+      }
+    ],
+    "courses": [
+      {
+        "courseCode": "ARBC3",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          3,
+          2,
+          1,
+          6,
+          5
+        ]
+      },
+      {
+        "courseCode": "ENGL3",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      {
+        "courseCode": "SCEN3",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          1,
+          6,
+          5,
+          4,
+          3
+        ]
+      },
+      {
+        "courseCode": "MATH3",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          6,
+          5,
+          4,
+          3,
+          2
+        ]
+      },
+      {
+        "courseCode": "ISLM3",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          2,
+          1,
+          6,
+          5,
+          4
+        ]
+      },
+      {
+        "courseCode": "COMP3",
+        "semester": "Spring 2021",
+        "day": [
+          "Sun",
+          "Mon",
+          "Tus",
+          "Wed",
+          "Thr"
+        ],
+        "time": [
+          4,
+          3,
+          2,
+          1,
+          6
+        ]
+      }
+    ]
   }
 ]
+
+
