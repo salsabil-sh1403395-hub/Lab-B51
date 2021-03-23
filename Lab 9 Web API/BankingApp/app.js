@@ -22,6 +22,25 @@ app.get('/api/accounts' , async (req, res)=>{
     res.json(accounts)
 })
 
+app.get('/api/accounts/:acctNo', async (req, res)=>{
+
+    const accountNo = req.params.acctNo
+    let accounts = await fs.readJson(filePath)
+    const account = accounts.find(acc=>acc.accountNo == accountNo)
+    res.json(account)
+})
+
+app.delete('/api/accounts/:acctNo', async (req, res)=>{
+    const accountNo = req.params.acctNo
+    let accounts = await fs.readJson(filePath)
+
+    accounts = accounts.filter(acc=>acc.accountNo != accountNo)
+    await fs.writeJson(filePath , accounts)
+    res.send(`Successfully deleted the account with acc-no ${accountNo}`)
+})
+
+
+
 app.listen(port, (req,res) => {
     console.log(`Server started @http://localhost:${port} successfully`)
 })
