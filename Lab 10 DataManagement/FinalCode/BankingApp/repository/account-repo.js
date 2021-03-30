@@ -5,7 +5,6 @@ class AccountRepo {
     async addAccount(account) {
         return Account.create(account)
     }
-
     async getAccounts(type) {
         const accounts = await fs.readJson(filePath)
         if (type && type != 'All')
