@@ -1,49 +1,48 @@
-import fs from "fs-extra";
-import {fileURLToPath} from 'url'
-const url = new URL('../data/accounts.json' , import.meta.url)
-const filePath = fileURLToPath(url)
+import Account from '../model/account.js'
+import Transaction from '../model/transaction.js'
 
 class AccountRepo {
-    async getAccounts(type){
-        const accounts = await fs.readJson(filePath)
+    async addAccount(account) {
+        return Account.create(account)
+    }
 
-        if(type && type.toLowerCase() == 'current'||
-            type.toLowerCase() == 'saving'){
-            return accounts.filter(acc => acc.acctType.toLowerCase() == type.toLowerCase())
-        }else{
-            return accounts
-        }
-    }
-    async addAccount(account){
+    async getAccounts(type) {
         const accounts = await fs.readJson(filePath)
-        accounts.push(account)
-        return await fs.writeJson(filePath, accounts)
+        if (type && type != 'All')
+            return Account.find({acctType: type})
+        else
+            return Account.find()
     }
-    async updateAccount(updatedAccount){
-        const accounts = await fs.readJson(filePath)
 
-        const index = accounts.findIndex(acc => acc.accountNo == account.accountNo)
-        if (index >= 0) {
-            accounts[index] = updatedAccount
-            await fs.writeJson(filePath, accounts)
-            return accounts[index]
-        } else {
-            return {error : 'account does not exist'}
-        }
+    async updateAccount(updatedAccount) {
+        return Account.findByIdAndUpdate(updatedAccount._id, updatedAccount)
     }
+
     async getAccount(accNo) {
-        const accounts = await fs.readJson(filePath)
-        const account = accounts.find(acc => acc.accountNo == accNo)
-        return account
+        return Account.findOne({_id: accNo})
     }
+
     async deleteAccount(accountNo) {
-        const accounts = await fs.readJson(filePath)
-        const filtered = accounts.filter(acc => acc.accountNo != accountNo)
-        await fs.writeJson(filePath, filtered)
-        return {message : 'Account deleted'}
+        return Account.findByIdAndDelete(accountNo)
     }
-    async addTransaction(transaction){
-        //will be added to the json file
+
+    async addTransaction(transaction) {
+        const account = await this.getAccount(transaction.accNo)
+        if (transaction.transType == 'Withdraw')
+            account.balance -= transaction.amount
+        else
+            account.balance += transaction.amount
+
+        await account.save()
+        return Transaction.create(transaction)
+    }
+
+    async getTransactionByAccount(accNo) {
+        return Transaction.findOne({accNo})
+    }
+
+    async getTransactions() {
+        return Transaction.find()
     }
 }
 

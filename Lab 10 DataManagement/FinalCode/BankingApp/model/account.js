@@ -2,11 +2,12 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema
 const options = {
-    toJSON : {
-        virtuals : true
+    toJSON: {
+        virtuals: true
     }
 }
-const definition = {
+
+const accountSchema = new Schema({
     acctType: {
         type: String,
         enum: ['Current', 'Saving'],
@@ -17,9 +18,7 @@ const definition = {
         min: [0, 'balance can not be negative'],
         required: [true, 'balance can not be null']
     }
-}
-
-const accountSchema = new Schema(definition, options)
+}, options)
 
 accountSchema.virtual('interestRate').get(function () {
     return this.balance * 0.05
