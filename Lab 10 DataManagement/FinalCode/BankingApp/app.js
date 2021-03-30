@@ -9,10 +9,11 @@ const app = express()
 
 //connect to the database
 
-const remoteUri = "mongodb+srv://dbUser:dbUserPasword@cluster0.uqqqs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+
 const options = {useNewUrlParser: true , useUnifiedTopology : true}
 
-mongoose.connect(remoteUri , options , ()=>{
+const uri ="mongodb+srv://dbUser:<password>@cluster0.uqqqs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+mongoose.connect(uri , options , ()=>{
     console.log(`Database started successfully`)
 })
 
