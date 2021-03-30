@@ -1,7 +1,6 @@
 import express from 'express'
 
-import AccountService from "./service/account-service.js";
-const accountService = new AccountService()
+import accountService from "./service/account-service.js";
 const router = express.Router()
 
 router.route('/accounts')
