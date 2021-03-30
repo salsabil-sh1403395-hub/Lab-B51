@@ -1,10 +1,23 @@
 import express from 'express'
 import router from './router.js'
 import morgan from 'morgan'
+import mongoose from 'mongoose'
 
 //port number
 const port = 5000
 const app = express()
+
+//connect to the database
+const localUri = `mongodb://127.0.0.1:27017/banking-app`
+
+const options = {useNewUrlParser: true , useUnifiedTopology : true}
+
+mongoose.connect(localUri , options , ()=>{
+    console.log(`Database started successfully`)
+})
+
+// nodemon
+// node app.js
 
 //a middleware
 app.use(express.json())
@@ -28,3 +41,4 @@ app.listen(port, () => {
 //router : responsible for handling all the routing
 //app for server configurations
 
+// localbase //indexDB
