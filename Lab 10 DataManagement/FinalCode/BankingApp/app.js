@@ -8,11 +8,12 @@ const port = 5000
 const app = express()
 
 //connect to the database
-const localUri = `mongodb://127.0.0.1:27017/banking-app`
+// const localUri = `mongodb://127.0.0.1:27017/banking-app`
+const remoteUri = `mongodb+srv://dbUser:dbUserPassword@cluster0.uqqqs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
 const options = {useNewUrlParser: true , useUnifiedTopology : true}
 
-mongoose.connect(localUri , options , ()=>{
+mongoose.connect(remoteUri , options , ()=>{
     console.log(`Database started successfully`)
 })
 
