@@ -10,12 +10,16 @@ const app = express()
 //connect to the database
 
 
-const options = {useNewUrlParser: true , useUnifiedTopology : true}
-
-const uri ="mongodb+srv://dbUser:<password>@cluster0.uqqqs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-mongoose.connect(uri , options , ()=>{
-    console.log(`Database started successfully`)
-})
+const options = {useNewUrlParser: true, useUnifiedTopology: true}
+// const URI = `mongodb+srv://dbUser:dbUserPassword@cluster0.tptzm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+const URI = "mongodb://127.0.0.1:27017/banking-app"
+//step1
+mongoose.connect(
+    URI,
+    {useNewUrlParser: true, useUnifiedTopology: true}, () => {
+        console.log('successfully connected')
+    }
+)
 
 // nodemon
 // node app.js

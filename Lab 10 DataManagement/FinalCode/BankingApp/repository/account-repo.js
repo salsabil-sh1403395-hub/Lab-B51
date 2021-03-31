@@ -5,6 +5,7 @@ class AccountRepo {
     async addAccount(account) {
         return Account.create(account)
     }
+
     async getAccounts(type) {
         if (type && type != 'All')
             return Account.find({acctType: type})
@@ -41,6 +42,20 @@ class AccountRepo {
 
     async getTransactions() {
         return Transaction.find()
+    }
+
+    async sumBalance() {
+        return Account.aggregate([
+            {
+                $group: {
+                    _id : "acctType",
+                    total : { $sum : "$balance"},
+                    totalNoOfAccount : {$sum : 1}
+                },
+            },
+            {$sort : -1},
+            {$limit : 1}
+        ])
     }
 }
 
